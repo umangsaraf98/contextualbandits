@@ -209,7 +209,7 @@ def _check_1d_inp(y):
     return y
 
 def _check_refit_inp(refit_buffer_X, refit_buffer_r, refit_buffer):
-    if (refit_buffer_X is not None) or (refit_buffer_y is not None):
+    if (refit_buffer_X is not None) or (refit_buffer_r is not None):
         if not refit_buffer:
             msg  = "Can only pass 'refit_buffer_X' and 'refit_buffer_r' "
             msg += "when using 'refit_buffer'."
